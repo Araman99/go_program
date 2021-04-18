@@ -18,7 +18,7 @@ func main() {
 	// 3. Print the value.
 
 	fmt.Println("--------------------------------")
-	city := data.(map[string]interface{})["person"].(map[string]string)["city"]
-	fmt.Println("City: ", city)
+	city,okay := data.(map[string]interface{})["person"].(map[string]string)["city"]
+	fmt.Println("City: ", city,okay)
 
 }

@@ -44,8 +44,8 @@ func main() {
 	// 3. Print the value.
 
 	fmt.Println("--------------------------------")
-	goScore := data.(map[string]interface{})["ranks"].(map[string]interface{})["languages"].(map[string]interface{})["go"].(map[string]interface{})["score"]
+	goScore,okay := data.(map[string]interface{})["ranks"].(map[string]interface{})["languages"].(map[string]interface{})["go"].(map[string]interface{})["score"]
 
-	fmt.Println("Golang Score: ", goScore)
+	fmt.Println("Golang Score: ", goScore,okay)
 
 }
